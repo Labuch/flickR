@@ -1,0 +1,35 @@
+{
+  "name": "react-starter",
+  "version": "1.0.0",
+  "description": "Boilerplate for using react ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "dev": "webpack-dev-server"
+  },
+  "jest":{
+    "setupFiles": ["./src/setupTests.js"]
+  },
+  "author": "Buchou Guillaume",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "jest": "^23.1.0",
+    "webpack": "^4.10.2",
+    "webpack-cli": "^3.0.1",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
