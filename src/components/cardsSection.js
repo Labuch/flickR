@@ -1,37 +1,28 @@
 import React, { Component } from 'react';
 import Card from './card';
 
-class  cardsSection extends Component {
+class cardsSection extends Component {
+  renderCards() {
+    return this.props.images.map(({ title, url }) => <Card url={url} title={title} />);
+  }
 
-	renderCards()
-	{
-		return(<div style={styles.containerStyle}>
-			<Card/>
-			<Card/>
-			<Card/>
-			<Card/>
-			</div>);
-	}
-
-	render() {
-		return (
-			<div >
-			this is a cards section 
-			{this.renderCards()}
-			</div>);
-	}
+  render() {
+    return (
+      <div style={styles.containerStyle}>
+        {this.renderCards()}
+      </div>);
+  }
 }
 
 const styles = {
-	containerStyle:{
-		display: "flex",
-		flexDirection: "row",
-		flexWrap: "wrap",
-		
+  containerStyle: {
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
 
-	}
-}
-	
+  },
+};
 
 
-export default cardsSection ;  
+export default cardsSection;

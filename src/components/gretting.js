@@ -1,3 +1,3 @@
 import React from 'react';
 
-export default () => <div className="Greeting" >Welcome to the React Starter</div>
+export default () => <div className="Greeting" >Welcome to FlickR Feed pictures </div>;

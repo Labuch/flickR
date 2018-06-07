@@ -8,14 +8,19 @@
     "test:watch": "jest --watch",
     "dev": "webpack-dev-server"
   },
-  "jest":{
-    "setupFiles": ["./src/setupTests.js"]
+  "jest": {
+    "setupFiles": [
+      "./src/setupTests.js"
+    ]
   },
   "author": "Buchou Guillaume",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "eslint-plugin-import": "^2.12.0",
+    "fetch-jsonp": "^1.1.3",
     "react": "^16.4.0",
     "react-dom": "^16.4.0"
   },
